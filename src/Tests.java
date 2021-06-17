@@ -3,25 +3,35 @@ import java.util.Scanner;
 public class Tests {
 
 	public static void main(String[] args) {
+		// Izveidoju scanneri lai lietotājs varētu ievadīt
 		Scanner dati=new Scanner(System.in);
+		// Izveidoju mainīgos lai piefiksētu Lietotāja ierakstīto un atbilžu skaitu
 		int cip, atb=0;
+		// Izveidoju masīvu lai piefiksētu Jautājumus vienā mainīgajā
 		String[] jautajumi = {"Kurš cikls ir cikls ar priekšnosacījumu?\n", "Kā while cikls izpildās?\n", "Kāds būs iznākums pēc šī koda izpildes?\n", "Kā sauc ciklu kas strādā visu laiku?\n", "Patiess vai Aplams nosacījums ir:\n", "Kas ir jāliek X vietā while(a<=X)?\n", "Kā apzīmē and operatoru?\n", "Kā apzīmē or operatoru?\n", "Ko nozīmē =! vienādībā?\n", "Vai var notikt darbības ar skaitļiem cikla nosacījumā?\n",};
+		// Izveidoju mainīgo lai uzskaitītu nepareizās atbildes
 		String atbildes = "";
+		//Izvadu ekrānā jautājumu ar atbilžu variantiem
 		System.out.println(jautajumi[0]);
 		System.out.println("1. for(int i; i<x; i++)");
 		System.out.println("2. do while()");
 		System.out.println("3. while()");
 		System.out.println("4. switch() case:");
+		//Paprasu lietotājam izvēlēties pareizo atbildi
 		cip=dati.nextInt();
+		//Nolasu pareizo atbildi
 		switch(cip) {
 		case 3:
+			//Ja atbilde ir pareiza piefiksēju to
 			atb=atb+1;
 			System.out.println("Paldies par atbildi");
 		break;
 		default:
 			System.out.println("Paldies par atbildi");
+			//Ja atbilde ir nepareiza, piefiksēju to jautājumu
 			atbildes=atbildes+jautajumi[0];
 		}
+		//Tālāk tiek rakstīti jautājumi tādā pašā formā
 		System.out.println("***");
 		System.out.println(jautajumi[1]);
 		System.out.println("1. Cikls izpildas vienu reizi un tad pārbauda nosacījumu");
@@ -172,8 +182,10 @@ public class Tests {
 			atbildes=atbildes+jautajumi[9];
 	}
 		System.out.println("***");
+		//Izvadu ekrānā pareižo atbilžu skaitu
 		System.out.println("Tu atbildēji pareizi uz "+atb+" jautājumiem");
 		System.out.println("Tu atbildēji nepareizi uz sekojošajiem jautājumiem:");
+		//Izvadu ekrānā nepareizās atbildes
 		System.out.println(atbildes);
 		System.out.println("***");
 		System.out.println("Testa Beigas");
