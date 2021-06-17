@@ -5,7 +5,7 @@ public class Tests {
 	public static void main(String[] args) {
 		Scanner dati=new Scanner(System.in);
 		int cip, atb=0;
-		String[] jautajumi = {"Kurš cikls ir cikls ar priekšnosacījumu?\n", "Kā while cikls izpildās?\n", "Kāds būs iznākums pēc šī koda izpildes?\n", "Tests\n", "Tests5\n", "Tests6\n", "Tests7\n", "Tests8\n", "Tests9\n", "Tests10\n",};
+		String[] jautajumi = {"Kurš cikls ir cikls ar priekšnosacījumu?\n", "Kā while cikls izpildās?\n", "Kāds būs iznākums pēc šī koda izpildes?\n", "Kā sauc ciklu kas strādā visu laiku?\n", "Nosacījums ir:\n", "Kas ir jāliek X vietā while(a<=X)?\n", "\n", "Tests8\n", "Tests9\n", "Tests10\n",};
 		String atbildes = "";
 		System.out.println(jautajumi[0]);
 		System.out.println("1. for(int i; i<x; i++)");
@@ -49,7 +49,7 @@ public class Tests {
 		System.out.println(" ");
 		System.out.println("1. 0 1 2 3 4 5");
 		System.out.println("2. 5 4 3 2 1 0");
-		System.out.println("3. nekas");
+		System.out.println("3. netiks nekas izvadīts");
 		System.out.println("4. 0 1 2 3 4");
 		cip=dati.nextInt();
 		switch(cip) {
@@ -61,8 +61,55 @@ public class Tests {
 			System.out.println("Paldies par atbildi");
 			atbildes=atbildes+jautajumi[2];
 	}
-		
-		
+		System.out.println("***");
+		System.out.println(jautajumi[3]);
+		System.out.println("1. Saplīsis cikls");
+		System.out.println("2. sasaldēts cikls");
+		System.out.println("3. garšs cikls");
+		System.out.println("4. bezgalīgs cikls");
+		cip=dati.nextInt();
+		switch(cip) {
+		case 4:
+			atb=atb+1;
+			System.out.println("Paldies par atbildi");
+		break;
+		default:
+			System.out.println("Paldies par atbildi");
+			atbildes=atbildes+jautajumi[3];
+	}
+		System.out.println("***");
+		System.out.println(jautajumi[4]);
+		System.out.println("1. True vai False jeb Boolean");
+		System.out.println("2. String");
+		System.out.println("3. Char");
+		System.out.println("4. for");
+		cip=dati.nextInt();
+		switch(cip) {
+		case 1:
+			atb=atb+1;
+			System.out.println("Paldies par atbildi");
+		break;
+		default:
+			System.out.println("Paldies par atbildi");
+			atbildes=atbildes+jautajumi[4];
+	}
+		System.out.println("***");
+		System.out.println(jautajumi[5]);
+		System.out.println("1. Skaitlis, vai datu tips ar skaitli");
+		System.out.println("2. Boolean");
+		System.out.println("3. String");
+		System.out.println("4. for, if vai do");
+		cip=dati.nextInt();
+		switch(cip) {
+		case 1:
+			atb=atb+1;
+			System.out.println("Paldies par atbildi");
+		break;
+		default:
+			System.out.println("Paldies par atbildi");
+			atbildes=atbildes+jautajumi[5];
+	}
+		System.out.println("***");
 	}
 
 }
