@@ -5,7 +5,7 @@ public class Tests {
 	public static void main(String[] args) {
 		Scanner dati=new Scanner(System.in);
 		int cip, atb=0;
-		String[] jautajumi = {"Kurš cikls ir cikls ar priekšnosacījumu?\n", "Kā while cikls izpildās?\n", "Kāds būs iznākums pēc šī koda izpildes?\n", "Kā sauc ciklu kas strādā visu laiku?\n", "Nosacījums ir:\n", "Kas ir jāliek X vietā while(a<=X)?\n", "Kā apzīmē and operatoru?\n", "Kā apzīmē or operatoru?\n", "Ko nozīmē =! vienādībā?\n", "Tests10\n",};
+		String[] jautajumi = {"Kurš cikls ir cikls ar priekšnosacījumu?\n", "Kā while cikls izpildās?\n", "Kāds būs iznākums pēc šī koda izpildes?\n", "Kā sauc ciklu kas strādā visu laiku?\n", "Patiess vai Aplams nosacījums ir:\n", "Kas ir jāliek X vietā while(a<=X)?\n", "Kā apzīmē and operatoru?\n", "Kā apzīmē or operatoru?\n", "Ko nozīmē =! vienādībā?\n", "Vai var notikt darbības ar skaitļiem cikla nosacījumā?\n",};
 		String atbildes = "";
 		System.out.println(jautajumi[0]);
 		System.out.println("1. for(int i; i<x; i++)");
@@ -158,7 +158,25 @@ public class Tests {
 			atbildes=atbildes+jautajumi[8];
 	}
 		System.out.println("***");
-		
+		System.out.println(jautajumi[9]);
+		System.out.println("1. Jā");
+		System.out.println("2. Nē");
+		cip=dati.nextInt();
+		switch(cip) {
+		case 1:
+			atb=atb+1;
+			System.out.println("Paldies par atbildi");
+		break;
+		default:
+			System.out.println("Paldies par atbildi");
+			atbildes=atbildes+jautajumi[9];
+	}
+		System.out.println("***");
+		System.out.println("Tu atbildēji pareizi uz "+atb+" jautājumiem");
+		System.out.println("Tu atbildēji nepareizi uz sekojošajiem jautājumiem:");
+		System.out.println(atbildes);
+		System.out.println("***");
+		System.out.println("Testa Beigas");
 	}
 	
 
