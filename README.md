@@ -1,0 +1,4 @@
+- [ ] Pārbaudes tests
+- [ ] Testēšanas žurnāls
+- [ ] Testpiemēri
+- [ ] Mācību materiāls
