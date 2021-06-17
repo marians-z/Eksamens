@@ -5,7 +5,7 @@ public class Tests {
 	public static void main(String[] args) {
 		Scanner dati=new Scanner(System.in);
 		int cip, atb=0;
-		String[] jautajumi = {"Kurš cikls ir cikls ar priekšnosacījumu?\n", "Kā while cikls izpildās?\n", "Kāds būs iznākums pēc šī koda izpildes?\n", "Kā sauc ciklu kas strādā visu laiku?\n", "Nosacījums ir:\n", "Kas ir jāliek X vietā while(a<=X)?\n", "\n", "Tests8\n", "Tests9\n", "Tests10\n",};
+		String[] jautajumi = {"Kurš cikls ir cikls ar priekšnosacījumu?\n", "Kā while cikls izpildās?\n", "Kāds būs iznākums pēc šī koda izpildes?\n", "Kā sauc ciklu kas strādā visu laiku?\n", "Nosacījums ir:\n", "Kas ir jāliek X vietā while(a<=X)?\n", "Kā apzīmē and operatoru?\n", "Kā apzīmē or operatoru?\n", "Ko nozīmē =! vienādībā?\n", "Tests10\n",};
 		String atbildes = "";
 		System.out.println(jautajumi[0]);
 		System.out.println("1. for(int i; i<x; i++)");
@@ -110,6 +110,56 @@ public class Tests {
 			atbildes=atbildes+jautajumi[5];
 	}
 		System.out.println("***");
+		System.out.println(jautajumi[6]);
+		System.out.println("1. un");
+		System.out.println("2. ||");
+		System.out.println("3. &&");
+		System.out.println("4. =!");
+		cip=dati.nextInt();
+		switch(cip) {
+		case 3:
+			atb=atb+1;
+			System.out.println("Paldies par atbildi");
+		break;
+		default:
+			System.out.println("Paldies par atbildi");
+			atbildes=atbildes+jautajumi[6];
 	}
+		System.out.println("***");
+		System.out.println(jautajumi[7]);
+		System.out.println("1. or");
+		System.out.println("2. ||");
+		System.out.println("3. !!");
+		System.out.println("4. &&");
+		cip=dati.nextInt();
+		switch(cip) {
+		case 2:
+			atb=atb+1;
+			System.out.println("Paldies par atbildi");
+		break;
+		default:
+			System.out.println("Paldies par atbildi");
+			atbildes=atbildes+jautajumi[7];
+	}
+		System.out.println("***");
+		System.out.println(jautajumi[8]);
+		System.out.println("1. Vienādība");
+		System.out.println("2 Un funkcija");
+		System.out.println("3. Cikls");
+		System.out.println("4. Nevienādība");
+		cip=dati.nextInt();
+		switch(cip) {
+		case 4:
+			atb=atb+1;
+			System.out.println("Paldies par atbildi");
+		break;
+		default:
+			System.out.println("Paldies par atbildi");
+			atbildes=atbildes+jautajumi[8];
+	}
+		System.out.println("***");
+		
+	}
+	
 
 }
